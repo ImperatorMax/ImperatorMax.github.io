@@ -1,0 +1,72 @@
+/*
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 1100px;
+    margin: 30px auto;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: black;
+    color: white;;
+}
+header {
+    height: 7vh;
+    display: flex;
+}
+.menu {
+    width: 200px;
+    padding: 8px;
+}
+.menu input {
+    background-color: grey;
+    border: none;
+    margin: 5px;
+    height: 3vh;
+    color: white;
+}
+.menu input::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    text-align: center;
+}
+.user {
+    width: 900px;
+    padding: 8px;
+    display: flex;
+}
+.user .avatar {
+    width: 4vh;
+    height: 4vh;
+    border: 1px solid white;
+    background-image: url(photo_2022-11-14_19-50-53.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    
+}
+
+* {
+    position: relative;
+}
+#GoogleLogo {
+    margin-top: 300px;
+    margin-left: 800px;
+}
+#Poisk {
+    padding-left: 820px;
+    padding-top: 30px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.svg {
+    width: 40px;
+    height: 40px;
+
+}
+*/

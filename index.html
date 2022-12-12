@@ -1,0 +1,248 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="menu">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="user">
+                <div class="avatar">
+
+                </div>
+                <div class="username">
+                    Юниоркод Онлайн
+                </div>  
+            </div>
+        </header>
+        <div class="container">
+            <aside>
+                Aside pannel                                                                                                                    
+            </aside>
+            <main>
+                Main pannel
+            </main>
+        </div>
+    </div> 
+    <div class="main">
+        <div class="top">
+            <div class="ic">
+                <img src="google.svg" class="svg" alt="">
+            </div>
+            <div class="ic">
+                <img src="youtube.svg" class="svg" alt="">
+            </div>
+
+        </div>
+        <div class="bot">
+            <div class="srhBox">
+                <div class="icn">
+                    <img src="google.svg" class="svg">
+                </div>
+                <input type="text" id="srh">
+                <div class="ic">
+                    <img src="search.svg" class="svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Easy search to Google & Youtube</title>
+</head>
+<style>
+   /* ==================== CSS ================== */
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      position: relative;
+   }
+   .svg{
+      width: 40px;
+      height: 40px;
+   }
+   .flex{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .c{
+      flex-flow: column;
+   }
+   body{
+      width: 100vw;
+      min-height: 100vh;
+      background-color: #d19d72;
+
+      --outShade: 
+      inset -2px -2px 1px #0000003d,
+      inset 2px 2px 1px #fff;
+      --inShade: 
+      inset 2px 2px 1px #0000003d,
+      inset -2px -2px 1px rgb(255, 255, 255);
+   }
+   .top {
+      margin-bottom: 50px;
+   }
+   .main{
+      padding: 30px;
+      box-shadow: var(--outShade);
+      border-radius: 20px;
+      background: #ffd8a9;
+   }
+   .top .ic{
+      margin: 0 50px;
+      padding: 20px;
+      border-radius: 50%;
+      background: #ffc79a;
+      box-shadow: var(--inShade);
+   }
+   .top .ic:hover{
+      box-shadow: var(--outShade);
+   }
+   .srhBox:hover{
+      box-shadow: var(--outShade);
+   }
+   .srhBox {
+      border-radius: 99px;
+      box-shadow: var(--inShade);
+      background: #caa374;
+      align-items: stretch;
+   }
+   .srhBox input{
+      background: none;
+      outline: none;
+      border: none;
+      font-size: 1.1em;
+   }
+   .srhBox .icn .svg{
+      width: 30px;
+      height: 30px;
+   }
+   .srhBox .icn{
+      padding: 10px;
+   }
+   #srhIc{
+      padding: 0 15px;
+      cursor: pointer;
+   }
+   #WarThunder{
+    width: 600px;
+    height: 400px;
+    margin-left: 200px;
+    border-radius: 500px;
+   }
+   #WarFace{
+    width: 600px;
+    height: 400px;
+    margin-left: -2000px;
+    border-radius: 500px;
+   }
+   #Genshin{
+    width: 600px;
+    height: 400px;
+    margin-left: -1300px;
+    margin-top: -600px;
+    border-radius: 500px;
+   }
+   #Blog{
+    width: 600px;
+    height: 400px;
+    margin-left: -1300px;
+    margin-top: 1000px;
+    font-family: Comic Sans MS;
+   }
+</style>
+<body class="flex">
+   <div class="main flex c">
+      <div class="top flex">
+         <div class="ic flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+              </svg>
+         </div>
+
+         <div class="ic flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+              </svg>
+         </div>
+      </div>
+
+      <div class="bot flex">
+         <div class="srhBox flex">
+            <div class="icn flex" id="shrLogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                    <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                  </svg>
+            </div>
+            <input type="text" id="srh">
+            <div class="icn flex" id="srhIc" onclick="search()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+            </div>
+         </div>
+      </div>
+   </div>
+   <a href="https://warthunder.ru/ru">
+   <img src="KARTYNKY/Roccat-Military05_zpsf0d3606c.jpg"  alt="" id="WarThunder">
+   </a>
+   <a href="https://ru.warface.com">
+    <img src="KARTYNKY/maxresdefault.jpg" id="WarFace">
+    </a>
+    <a href="https://genshin.hoyoverse.com/ru/">
+      <img src="KARTYNKY/3453-genshin-impact.jpg" id="Genshin">
+      </a>
+    <a id="Blog">
+        Блог (англ. blog, от web log — интернет-журнал событий, интернет-дневник, онлайн-дневник) — веб-сайт, основное содержимое которого — регулярно добавляемые пользователем записи, содержащие текст, изображения или мультимедиа. Для блогов характерна возможность публикации отзывов (комментариев) посетителями; она делает блоги средой сетевого общения, имеющей ряд преимуществ перед электронной почтой, группами новостей и чатами.
+
+Людей, ведущих блог, называют бло́герами[1][2]. Совокупность всех блогов Сети принято называть блогосферой.
+
+Первым блогом считается страница Тима Бернерса-Ли, где он, начиная с 1992 г., публиковал новости. Более широкое распространение блоги получили с 1996 г. В августе 1999 г. компьютерная компания Pyra Labs из Сан-Франциско открыла сайт Blogger.com, который стал первой бесплатной блоговой службой.
+
+В настоящее время особенность блогов заключается не только в структуре записей, но и в простоте добавления новых записей. Пользователь просто обращается к веб-серверу, проходит процесс идентификации пользователя, после чего он добавляет новую запись к своей коллекции. Сервер представляет информацию как последовательность сообщений, помещая в самом верху самые свежие сообщения. Структура коллекции напоминает привычную последовательную структуру дневника или журнала.
+        </a>
+   <script>
+         /* =============== JS ================ */
+
+      var url='google.com';
+
+      opp('.top .ic').forEach(val=>{
+         val.addEventListener('click',()=>{
+            op('#shrLogo img').src=val.firstElementChild.src;
+            url=val.firstElementChild.getAttribute('url');
+         })
+      })
+
+      function search(){
+
+         url="https://"+url+'/search?q='+op('#srh').value;
+         window.open(url);
+
+      }
+
+      function op(elem){
+         return document.querySelector(elem);
+      }
+      function opp(elem){
+         return document.querySelectorAll(elem);
+      }
+   </script>
+<script src="https://www.drv.tw/inc/wd.js?s=xncz6jvtel8xrnny9ta6nw"></script></body>
+</html>
